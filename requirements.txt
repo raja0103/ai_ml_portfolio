@@ -1,0 +1,6 @@
+# Direct dependencies for app.py and train_model.py.
+# Versions are not pinned: the original training environment was not provided.
+# Retrain the model in the environment used to run it.
+streamlit
+scikit-learn
+joblib
