@@ -1,0 +1,303 @@
+{
+  "source": "SQLite synthetic tickets",
+  "label_type": "generated suggested labels",
+  "split_method": "stratified scenario-group holdout",
+  "random_state": 42,
+  "training_tickets": 40000,
+  "validation_tickets": 10000,
+  "training_groups": [
+    "access_identity:00",
+    "access_identity:01",
+    "access_identity:02",
+    "access_identity:04",
+    "access_identity:05",
+    "access_identity:07",
+    "access_identity:08",
+    "access_identity:09",
+    "billing_subscription:00",
+    "billing_subscription:01",
+    "billing_subscription:03",
+    "billing_subscription:04",
+    "billing_subscription:05",
+    "billing_subscription:07",
+    "billing_subscription:08",
+    "billing_subscription:09",
+    "integration_sync:00",
+    "integration_sync:02",
+    "integration_sync:03",
+    "integration_sync:05",
+    "integration_sync:06",
+    "integration_sync:07",
+    "integration_sync:08",
+    "integration_sync:09",
+    "performance:00",
+    "performance:01",
+    "performance:02",
+    "performance:03",
+    "performance:04",
+    "performance:06",
+    "performance:07",
+    "performance:08",
+    "product_defect:00",
+    "product_defect:01",
+    "product_defect:03",
+    "product_defect:04",
+    "product_defect:05",
+    "product_defect:06",
+    "product_defect:07",
+    "product_defect:08"
+  ],
+  "validation_groups": [
+    "access_identity:03",
+    "access_identity:06",
+    "billing_subscription:02",
+    "billing_subscription:06",
+    "integration_sync:01",
+    "integration_sync:04",
+    "performance:05",
+    "performance:09",
+    "product_defect:02",
+    "product_defect:09"
+  ],
+  "baseline_macro_f1": 0.06666666666666667,
+  "accuracy": 0.7296,
+  "macro_f1": 0.6679532235855067,
+  "category_order": [
+    "access_identity",
+    "billing_subscription",
+    "performance",
+    "integration_sync",
+    "product_defect"
+  ],
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      2000
+    ],
+    [
+      0,
+      2000,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2000,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2000,
+      0
+    ],
+    [
+      0,
+      704,
+      0,
+      0,
+      1296
+    ]
+  ],
+  "classification_report": {
+    "access_identity": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 2000.0
+    },
+    "billing_subscription": {
+      "precision": 0.7396449704142012,
+      "recall": 1.0,
+      "f1-score": 0.8503401360544217,
+      "support": 2000.0
+    },
+    "performance": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2000.0
+    },
+    "integration_sync": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2000.0
+    },
+    "product_defect": {
+      "precision": 0.3932038834951456,
+      "recall": 0.648,
+      "f1-score": 0.48942598187311176,
+      "support": 2000.0
+    },
+    "accuracy": 0.7296,
+    "macro avg": {
+      "precision": 0.6265697707818694,
+      "recall": 0.7296,
+      "f1-score": 0.6679532235855067,
+      "support": 10000.0
+    },
+    "weighted avg": {
+      "precision": 0.6265697707818694,
+      "recall": 0.7296,
+      "f1-score": 0.6679532235855067,
+      "support": 10000.0
+    }
+  },
+  "first_20_errors": [
+    {
+      "ticket_id": 3004,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3005,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3006,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3007,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3008,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3009,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3010,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3011,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3012,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3013,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3014,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3015,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3016,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3017,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3018,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3019,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3020,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3021,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3022,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    },
+    {
+      "ticket_id": 3023,
+      "subject": "Login loop",
+      "actual_synthetic_label": "access_identity",
+      "predicted_category": "product_defect",
+      "scenario_group": "access_identity:03"
+    }
+  ],
+  "limitations": [
+    "Template-generated synthetic data, not real customer data.",
+    "Only 50 underlying scenarios in the complete dataset.",
+    "Validation rows are correlated variations of 10 scenarios.",
+    "No separate final test set in this practice baseline.",
+    "Metrics do not establish production readiness."
+  ]
+}

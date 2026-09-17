@@ -1,0 +1,26 @@
+ticket_id,subject,description,category
+TR001,Password reset link expired,The reset link says it is invalid when I try to set a new password.,access_identity
+TR002,Account locked,My account was locked after several incorrect password attempts.,access_identity
+TR003,Verification code missing,I cannot sign in because the authentication code never arrives.,access_identity
+TR004,Login redirects repeatedly,After entering my credentials I am sent back to the login page.,access_identity
+TR005,Need access to workspace,My invitation expired and I cannot join the company workspace.,access_identity
+TR006,Subscription inactive after payment,The payment succeeded but my paid plan is still inactive.,billing_subscription
+TR007,Charged twice,I see two charges for the same monthly subscription.,billing_subscription
+TR008,Invoice amount incorrect,My invoice includes a higher amount than the plan I purchased.,billing_subscription
+TR009,Cancel automatic renewal,I want to stop the next subscription renewal.,billing_subscription
+TR010,Refund not received,My approved subscription refund has not reached my bank account.,billing_subscription
+TR011,Dashboard loads slowly,The dashboard eventually opens but takes almost a minute.,performance
+TR012,Search results delayed,Searching for a customer works but results take thirty seconds.,performance
+TR013,Report generation too slow,The report completes successfully but takes much longer than usual.,performance
+TR014,Pages slow during peak hours,All pages respond slowly when many colleagues use the application.,performance
+TR015,File upload takes too long,The upload finishes without errors but a small file takes ten minutes.,performance
+TR016,CRM contacts not syncing,New contacts in our connected CRM are not appearing in this application.,integration_sync
+TR017,Webhook events missing,Our external endpoint is not receiving the configured webhook events.,integration_sync
+TR018,External connector disconnected,The connection to our accounting platform keeps disconnecting.,integration_sync
+TR019,Calendar updates not transferred,Meeting changes in this application are not syncing to the connected calendar.,integration_sync
+TR020,Imported records duplicated,The external data sync creates a second copy of each existing record.,integration_sync
+TR021,Save button does nothing,Clicking Save on the profile form produces no action or error.,product_defect
+TR022,Application crashes on opening settings,Opening the settings page consistently closes the application.,product_defect
+TR023,Wrong total displayed,The order total does not equal the sum of the listed item prices.,product_defect
+TR024,Preferences not retained,My display preferences return to defaults after I save them.,product_defect
+TR025,Downloaded report is blank,The exported report contains no rows although the preview shows records.,product_defect
